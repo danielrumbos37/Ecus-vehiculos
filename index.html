@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumbosolucions - ECUs y Computadoras de Motor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>⚙️ Rumbosolucions</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>ECUs y Computadoras de Motor de Calidad</h2>
+            <p>Especialistas en venta, diagnóstico y programación de computadoras vehiculares</p>
+            <a href="#catalogo" class="btn btn-primary">Ver Catálogo</a>
+        </div>
+    </section>
+
+    <!-- Información de la empresa -->
+    <section class="info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🏢 Sobre Nosotros</h3>
+                    <p>Rumbosolucions es tu aliado confiable en computadoras de motor. Con años de experiencia, ofrecemos ECUs originales y reprogramadas para las principales marcas vehiculares.</p>
+                </div>
+                <div class="info-card">
+                    <h3>✅ Marcas Disponibles</h3>
+                    <ul>
+                        <li>Ford</li>
+                        <li>Renault</li>
+                        <li>Luv Dmax</li>
+                        <li>Y muchas más...</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3>🔧 Servicios</h3>
+                    <ul>
+                        <li>Venta de ECUs</li>
+                        <li>Diagnóstico de fallas</li>
+                        <li>Reprogramación</li>
+                        <li>Asesoría técnica</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo de Productos -->
+    <section id="catalogo" class="catalogo">
+        <div class="container">
+            <h2>Catálogo de ECUs</h2>
+            
+            <!-- Filtros -->
+            <div class="filtros">
+                <input type="text" id="buscar" class="filtro-input" placeholder="Buscar por modelo o marca...">
+                <select id="marca" class="filtro-select">
+                    <option value="">Todas las marcas</option>
+                    <option value="ford">Ford</option>
+                    <option value="renault">Renault</option>
+                    <option value="luv">Luv Dmax</option>
+                    <option value="otros">Otros</option>
+                </select>
+                <select id="precio" class="filtro-select">
+                    <option value="">Todos los precios</option>
+                    <option value="0-150">$0 - $150</option>
+                    <option value="150-300">$150 - $300</option>
+                    <option value="300-500">$300 - $500</option>
+                    <option value="500+">$500+</option>
+                </select>
+            </div>
+
+            <!-- Productos -->
+            <div class="productos-grid" id="productosGrid">
+                <!-- Los productos se cargarán aquí con JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrito flotante -->
+    <div class="carrito-flotante">
+        <button id="btnCarrito" class="btn-carrito">🛒 <span id="contadorCarrito">0</span></button>
+        <div id="carritoModal" class="modal">
+            <div class="modal-content">
+                <span class="cerrar">&times;</span>
+                <h3>Tu Carrito</h3>
+                <div id="carritoItems"></div>
+                <div class="carrito-total">
+                    <strong>Total: $<span id="totalCarrito">0</span></strong>
+                </div>
+                <button class="btn btn-primary" id="btnContactarCarrito">Contactar para Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div class="contacto-grid">
+                <div class="contacto-info">
+                    <h3>Rumbosolucions</h3>
+                    <p><strong>Propietario:</strong> Daniel Rumbos</p>
+                    <p><strong>Ubicación:</strong> Caracas, Venezuela</p>
+                    <p><strong>Teléfono/WhatsApp:</strong> <a href="tel:04160453678">04160453678</a></p>
+                    <p><strong>Horarios:</strong> 9:00 AM - 6:00 PM</p>
+                </div>
+                <form class="contacto-form" id="formularioContacto">
+                    <input type="text" placeholder="Tu nombre" required>
+                    <input type="email" placeholder="Tu email" required>
+                    <textarea placeholder="Tu mensaje..." rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Rumbosolucions. Todos los derechos reservados.</p>
+        <p>Caracas, Venezuela | Tel: 04160453678</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
