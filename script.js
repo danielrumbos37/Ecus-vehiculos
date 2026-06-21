@@ -1,4 +1,4 @@
-// Base de datos de productos ECUs
+// Base de datos de productos ECUs con imágenes
 const productos = [
     {
         id: 1,
@@ -7,106 +7,115 @@ const productos = [
         modelo: "F-150 2010-2020",
         descripcion: "Computadora de motor para Ford F-150. Compatible con versiones gasolina y diésel.",
         precio: 180,
-        emoji: "🔧"
+        imagen: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop"
     },
     {
         id: 2,
-        nombre: "ECU Motor Ford Fiesta",
+        nombre: "ECU Motor Ford Fiesta Power",
         marca: "ford",
-        modelo: "Fiesta 2012-2019",
-        descripcion: "ECU reprogramada y diagnosticada. Mejora rendimiento y eficiencia.",
+        modelo: "Fiesta Power 2008-2020",
+        descripcion: "ECU reprogramada y diagnosticada. Mejora rendimiento y eficiencia del Fiesta Power.",
         precio: 120,
-        emoji: "⚙️"
+        imagen: "https://images.unsplash.com/photo-1590362891990-f8ddef7926bd?w=400&h=300&fit=crop"
     },
     {
         id: 3,
+        nombre: "ECU Motor Ford Fiesta Move",
+        marca: "ford",
+        modelo: "Fiesta Move 2010-2019",
+        descripcion: "Computadora diagnosticada y optimizada para Fiesta Move. Funcionamiento probado.",
+        precio: 130,
+        imagen: "https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=400&h=300&fit=crop"
+    },
+    {
+        id: 4,
         nombre: "ECU Motor Ford Mustang",
         marca: "ford",
         modelo: "Mustang 2015-2023",
         descripcion: "Computadora original con garantía. Soporte técnico incluido.",
         precio: 250,
-        emoji: "🏎️"
+        imagen: "https://images.unsplash.com/photo-1605559424843-9e4c3ff86981?w=400&h=300&fit=crop"
     },
     {
-        id: 4,
+        id: 5,
         nombre: "ECU Motor Renault Duster",
         marca: "renault",
         modelo: "Duster 2012-2021",
         descripcion: "ECU diagnosticada para Renault Duster. Comprobado funcionamiento.",
         precio: 150,
-        emoji: "🚗"
+        imagen: "https://images.unsplash.com/photo-1549399542-7e3f8b83ad38?w=400&h=300&fit=crop"
     },
     {
-        id: 5,
+        id: 6,
         nombre: "ECU Motor Renault Sandero",
         marca: "renault",
         modelo: "Sandero 2014-2020",
         descripcion: "Computadora con certificado de funcionamiento. Envío rápido.",
         precio: 130,
-        emoji: "🔩"
+        imagen: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=400&h=300&fit=crop"
     },
     {
-        id: 6,
+        id: 7,
         nombre: "ECU Motor Renault Mégane",
         marca: "renault",
         modelo: "Mégane 2016-2022",
         descripcion: "ECU original Renault. Garantía de 6 meses.",
         precio: 200,
-        emoji: "⚡"
+        imagen: "https://images.unsplash.com/photo-1553882900-f2b6fc498375?w=400&h=300&fit=crop"
     },
     {
-        id: 7,
+        id: 8,
         nombre: "ECU Motor Luv Dmax",
         marca: "luv",
         modelo: "Dmax 2012-2021",
         descripcion: "Computadora diagnosticada para Luv Dmax. Motor sin fallas.",
         precio: 170,
-        emoji: "💪"
-    },
-    {
-        id: 8,
-        nombre: "ECU Motor Luv D-Max 2.2",
-        marca: "luv",
-        modelo: "D-Max 2.2 2015-2023",
-        descripcion: "ECU con prueba de funcionamiento. Incluye instalación.",
-        precio: 190,
-        emoji: "🔨"
+        imagen: "https://images.unsplash.com/photo-1606611281537-130038073a84?w=400&h=300&fit=crop"
     },
     {
         id: 9,
+        nombre: "ECU Motor Luv D-Max 2.2",
+        marca: "luv",
+        modelo: "D-Max 2.2 2015-2023",
+        descripcion: "ECU con prueba de funcionamiento. Incluye asesoría técnica.",
+        precio: 190,
+        imagen: "https://images.unsplash.com/photo-1605559424843-9e4c3ff86981?w=400&h=300&fit=crop"
+    },
+    {
+        id: 10,
         nombre: "ECU Motor Chevrolet Cruze",
         marca: "otros",
         modelo: "Cruze 2012-2020",
         descripcion: "Computadora Chevrolet certificada. Diagnosticada completamente.",
         precio: 140,
-        emoji: "🚙"
+        imagen: "https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=400&h=300&fit=crop"
     },
     {
-        id: 10,
+        id: 11,
         nombre: "ECU Motor Honda Civic",
         marca: "otros",
         modelo: "Civic 2014-2022",
         descripcion: "ECU Honda original. Con garantía y soporte técnico.",
         precio: 160,
-        emoji: "🏁"
+        imagen: "https://images.unsplash.com/photo-1567818735868-e71b99932e29?w=400&h=300&fit=crop"
     },
     {
-        id: 11,
+        id: 12,
         nombre: "ECU Motor Toyota Corolla",
         marca: "otros",
         modelo: "Corolla 2013-2021",
         descripcion: "Computadora diagnosticada y reprogramada. Eficiencia probada.",
         precio: 145,
-        emoji: "🎯"
+        imagen: "https://images.unsplash.com/photo-1550523506-83efbcecaaeb?w=400&h=300&fit=crop"
     },
     {
-        id: 12,
+        id: 13,
         nombre: "ECU Motor Nissan Altima",
         marca: "otros",
         modelo: "Altima 2015-2022",
         descripcion: "ECU original Nissan. Motor sin problemas de funcionamiento.",
         precio: 175,
-        emoji: "🔌"
+        imagen: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop"
     }
 ];
 
@@ -140,7 +149,9 @@ function renderProductos(productosAMostrar = productos) {
         const card = document.createElement('div');
         card.className = 'producto-card';
         card.innerHTML = `
-            <div class="producto-imagen">${producto.emoji}</div>
+            <div class="producto-imagen">
+                <img src="${producto.imagen}" alt="${producto.nombre}" onerror="this.src='https://via.placeholder.com/400x300?text=ECU+${encodeURIComponent(producto.modelo)}'">
+            </div>
             <div class="producto-contenido">
                 <div class="producto-marca">${obtenerNombreMarca(producto.marca)}</div>
                 <div class="producto-nombre">${producto.nombre}</div>
